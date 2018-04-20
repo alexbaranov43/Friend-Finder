@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey</title>
+  <link rel="icon" href="friends-friendship-partner-team-teamwork-003-512.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Survey Questions</h1>
+    </div>
+  </div>
+
+
+  <div class="container questions">
+
+    <h2>About You</h2>
+    <div class="input-group">
+      <p>Name (required)</p>
+      <input type="text" class="form-control" id="name" placeholder="Name" aria-describedby="basic-addon1">
+      <p>Link to Photo Image (required)</p>
+      <input type="text" class="form-control" id="photoLink" placeholder="Link" aria-describedby="basic-addon1">
+    </div>
+    <h3>Question 1</h3>
+    <p>I prefer reading a book over watching Netflix or TV</p>
+    <select class="form-control placeholder q1">
+      <option value="">Select an Option</option>
+      <option value="1">1 (strongly disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (strongly agree)</option>
+    </select>
+    <h3>Question 2</h3>
+    <p>Generally speaking, aliens do not really care what you wear when you walk your dog</p>
+    <select class="form-control placeholder q2">
+      <option value="">Select an Option</option>
+      <option value="1">1 (strongly disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (strongly agree)</option>
+    </select>
+    <h3>Question 3</h3>
+    <p>You find it easy to stay relaxed and focused even when there is a giant volcano exploding on the moons of Saturn.</p>
+    <select class="form-control placeholder q3">
+      <option value="">Select an Option</option>
+      <option value="1">1 (strongly disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (strongly agree)</option>
+    </select>
+    <h3>Question 4</h3>
+    <p>You rarely do something just out of sheer curiosity of how it will affect the stock market values of penny stocks.</p>
+    <select class="form-control placeholder q4">
+      <option value="">Select an Option</option>
+      <option value="1">1 (strongly disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (strongly agree)</option>
+    </select>
+    <h3>Question 5</h3>
+    <p>People can rarely transport you via lightning bolts.</p>
+    <select class="form-control placeholder q5">
+      <option value="">Select an Option</option>
+      <option value="1">1 (strongly disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (strongly agree)</option>
+    </select>
+    <h3>Question 6</h3>
+    <p>It is often difficult for you to relate to other people’s feelings regarding the movie Titanic.</p>
+    <select class="form-control placeholder q6">
+      <option value="">Select an Option</option>
+      <option value="1">1 (strongly disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (strongly agree)</option>
+    </select>
+    <h3>Question 7</h3>
+    <p>In a discussion, truth should be more important than people’s cavities.</p>
+    <select class="form-control placeholder q7">
+      <option value="">Select an Option</option>
+      <option value="1">1 (strongly disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (strongly agree)</option>
+    </select>
+    <h3>Question 8</h3>
+    <p>You rarely get carried away by fantasies and ocean currents.</p>
+    <select class="form-control placeholder q8">
+      <option value="">Select an Option</option>
+      <option value="1">1 (strongly disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (strongly agree)</option>
+    </select>
+    <h3>Question 9</h3>
+    <p>You think that everyone’s views should be respected regardless of whether they are supported by the monarchs of Wales.</p>
+    <select class="form-control placeholder q9">
+      <option value="">Select an Option</option>
+      <option value="1">1 (strongly disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (strongly agree)</option>
+    </select>
+    <h3>Question 10</h3>
+    <p>You feel more energetic after spending time with a group of jellyfish.</p>
+    <select class="form-control placeholder q10">
+      <option value="">Select an Option</option>
+      <option value="1">1 (strongly disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (strongly agree)</option>
+    </select>
+    <br>
+    <br>
+    <a href=#>
+      <button class="btn btn-primary btn-lg" id="submit">
+        <span class="glyphicon glyphicon-glass"></span> Submit</button>
+    </a>
+
+  </div>
+  <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h2 class="modal-title">
+            <strong>Best Match</strong>
+          </h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="match-name"></h2>
+          <img id="match-img" src="" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+
+    // Capture the form inputs
+    $("#submit").on("click", function (event) {
+      event.preventDefault();
+
+      // Form validation
+      function validateForm() {
+        var isValid = true;
+        $(".form-control").each(function () {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+
+        $(".chosen-select").each(function () {
+
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+        return isValid;
+      }
+
+      // If all required fields are filled
+      if (validateForm()) {
+        // Create an object for the user"s data
+        var newFriend = {
+          name: $("#name").val(),
+          photo: $("#photo").val(),
+          scores: [
+            $(".q1").val(),
+            $(".q2").val(),
+            $(".q3").val(),
+            $(".q4").val(),
+            $(".q5").val(),
+            $(".q6").val(),
+            $(".q7").val(),
+            $(".q8").val(),
+            $(".q9").val(),
+            $(".q10").val()
+          ]
+        };
+
+        // AJAX post the data to the friends API.
+        $.post("/friends/newFriends", newFriend, function (data) {
+
+          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+          $("#match-name").text(data.name);
+          $("#match-img").attr("src", data.photo);
+
+          // Show the modal with the best match
+          $("#results-modal").modal("toggle");
+
+        });
+        $(".form-control").val("")
+      } else {
+        alert("Please fill out all fields before submitting!");
+      }
+    });
+  </script>
+</body>
+
+</html>
